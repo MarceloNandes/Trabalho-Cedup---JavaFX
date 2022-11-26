@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="362.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.saudacaoController">
+   <children>
+      <Label text="Nome:">
+         <padding>
+            <Insets top="50.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="txtNome" maxWidth="300.0">
+         <VBox.margin>
+            <Insets left="50.0" />
+         </VBox.margin>
+      </TextField>
+      <Label text="Mensagem:">
+         <padding>
+            <Insets top="50.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="txtSaudacao" maxWidth="300.0">
+         <VBox.margin>
+            <Insets left="50.0" />
+         </VBox.margin>
+      </TextField>
+      <Label text="Saida:">
+         <padding>
+            <Insets top="50.0" />
+         </padding>
+      </Label>
+      <Label fx:id="lbResultado" maxWidth="300.0">
+         <VBox.margin>
+            <Insets left="50.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="btnExibir" contentDisplay="TOP" mnemonicParsing="false" onAction="#OnBtExibirAction" text="Imprimir" />
+            <Button fx:id="btnLimpar" mnemonicParsing="false" onAction="#OnBtLimparAction" text="Limpar" />
+            <Button fx:id="btnSair" mnemonicParsing="false" onAction="#OnBtSairAction" text="Sair" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
